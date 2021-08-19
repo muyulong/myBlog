@@ -1,0 +1,276 @@
+---
+title: Java实验报告实验题
+categories: 技术
+tags:
+  - 教程
+  - Java
+keywords: Java 题目
+description: 骚年，要来杯Java吗？
+cover: 'https://s2.ax1x.com/2019/12/11/QsfZrR.jpg'
+abbrlink: 1c731b77
+date: 2019-12-11 20:55:19
+---
+<!--more-->
+### 实验 1
+
+**生成一个日历类，输入日期后能正确输出对应的星期。例如，输入 2019,12,10 应能正确输出 星期二 。**
+```
+public class CalculateWeekDay{
+    public static void CalculateWeekDay(int y, int m, int d) {
+        if(m < 1 || m >12){
+            System.out.println("你输入的月份不再范围内，请重新输入！");
+        }
+        if (m == 1 || m == 2) {
+            m += 12;
+            y--;
+        }
+        int iWeek = (d + 2 * m + 3 * (m + 1) / 5 + y + y / 4 - y / 100 + y / 400) % 7;
+        switch (iWeek) {
+            case 0:
+                System.out.println("星期一\n");
+                break;
+            case 1:
+                System.out.println("星期二\n");
+                break;
+            case 2:
+                System.out.println("星期三\n");
+                break;
+            case 3:
+                System.out.println("星期四\n");
+                break;
+            case 4:
+                System.out.println("星期五\n");
+                break;
+            case 5:
+                System.out.println("星期六\n");
+                break;
+            case 6:
+                System.out.println("星期日\n");
+                break;
+        }
+    }
+    public static void main(String args[]) {
+        CalculateWeekDay(2019, 12, 11);
+    }
+}
+```
+### 实验 2
+
+**使用递归计算出 1*2*3*4*5*.....*30 的值并输出，使用递归计算 1+2+3+4+5+.....+1000 的值并输出。**
+```
+public class DiGui {
+	public static int jicheng(int n) {
+		if(n==1||n==0)
+			return n;
+		else
+			return n*jicheng(n-1);
+	}
+	public static int count(int n) {
+		if(n==1||n==0)
+			return n;
+		else
+			return n+count(n-1);
+	}
+	public static void main(String[] args) {
+		System.out.println("1*2*3*4*5*.....*30="+count(30));
+		System.out.println("1+2+3+4+5+.....+1000="+count(1000));
+	}
+}
+```
+### 实验 3
+
+**给定数组 1,5,3,7,11,6,13,9,8，找出该数组的最大值，求出该数组的平均值，对该数组求和并求出数组长度。**
+```
+public class FindMax {
+	public static void main(String[] args) {
+		int[] arr= {1,5,3,7,11,6,13,9,8};
+		int max=arr[0];
+		int sum=0;
+		float avg=0;
+		for(int i=1;i<arr.length;i++) {
+			if(arr[i]>max)
+				max=arr[i];
+			sum+=arr[i];
+		}
+		avg=sum/arr.length;
+		System.out.println("max="+max);
+		System.out.println("sum="+sum);
+		System.out.println("avg="+avg);
+		System.out.println("arr.length="+arr.length);
+	}
+}
+```
+### 实验 4
+
+**第 3 章课后习题 103 页第五大题编程题 1**
+```
+class Student{
+	private String name;
+	private double  grade;
+	public Student() {
+	}
+	public Student(String name,double grade) {
+		this.name=name;
+		this.grade=grade;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name=name;
+	}
+	public double getGrade() {
+		return grade;
+	}
+	public void setGrade(double grade) {
+		this.grade=grade;
+	}
+}
+public class Test {
+	public static void main(String[]args) {
+		Student stu1=new Student();
+		stu1.setName("zhangsan");
+		stu1.setGrade(99);
+		Student stu2=new Student();
+		stu2.setName("Li");
+		stu2.setGrade(100);
+	}
+}
+
+```
+### 实验 5
+
+**第 4 章课后习题 153 页第五大题编程题 1**
+```
+/*Student.java*/
+public class Student {
+	public String name;
+	public int age;
+	public Student(String name,int age)
+	{
+	  this.name=name;
+	  this.age=age;
+	}
+	public void show(){
+		System.out.println("name: "+name+" age: "+age);
+	}
+
+}
+/*UnderGraduate.java*/
+public class UnderGraduate extends Student{
+	public String degree;
+	public UnderGraduate(String name,int age,String degree){
+		super(name, age);
+		this.degree=degree;}
+     public void show(){
+			System.out.println("name: "+name+" age: "+age+" degree: "+degree);
+		}
+
+}
+/*Test01.java*/
+public class Test01{
+	public static void main(String[] args) {
+		Student student = new Student("丽丽", 16);
+		student.show();
+		UnderGraduate underGraduate = new UnderGraduate("爱敬", 30, "bechalor");
+		underGraduate.show();
+	}
+}
+```
+**第 4 章课后习题 153 页第五大题编程题 2**
+```
+/*Shape.java*/
+public abstract class Shape {
+	public abstract double area();
+	public abstract String getType();
+	public Shape(){};  
+}
+/*Circle.java*/
+public class Circle extends Shape{
+	
+	private double radius;
+
+	public Circle(double radius) {
+		// TODO Auto-generated method stub
+		this.radius=radius;
+	}
+	public double area() {
+		// TODO Auto-generated method stub
+		return radius*radius*3.14;
+	}
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "circle";
+	}
+	public void show()
+	{
+		System.out.println("Type: "+getType()+" radius: "+radius+" area: "+area());
+	}
+}
+/*Square.java*/
+public class Square extends Shape{
+	private double length;
+
+	public Square(double length) {
+		// TODO Auto-generated method stub
+		this.length=length;
+	}
+	public double area() {
+		// TODO Auto-generated method stub
+		return length*length;
+	}
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "square";
+	}
+	public void show()
+	{
+		System.out.println("Type: "+getType()+" length: "+length+" area: "+area());
+	}
+}
+/*test2.java*/
+public class test2 {
+	public static void main(String[] args) {
+		Square s1 = new Square(2);
+		s1.show();
+		Circle c1 = new Circle(3);
+		c1.show();
+	}
+}
+
+```
+### 实验 6
+
+**第 10 章课后习题 387 页第五大题编程题 1**
+```
+public class Test01 {
+	public static void main(String[] args) {
+		Teacher t = new Teacher();
+		new Thread(t, "陈老师").start();
+		new Thread(t, "高老师").start();
+		new Thread(t, "李老师").start();
+	}
+}
+class Teacher implements Runnable {
+	private int notes = 80;
+	public void run() {
+		while (true) {
+			dispatchNotes(); // 调用售票方法
+			if (notes <= 0) {
+				break;
+			}
+		}
+	}
+	private synchronized void dispatchNotes() {
+		if (notes > 0) {
+			try {
+				Thread.sleep(10); // 经过的线程休眠10毫秒
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println(Thread.currentThread().getName() + "---发出的笔记"
+					+ notes--);
+		}
+	}
+}
+```

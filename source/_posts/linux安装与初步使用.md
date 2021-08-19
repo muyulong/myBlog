@@ -1,0 +1,19 @@
+---
+title: linux安装与初步使用
+categories: 资源
+tags:
+  - 教程
+  - blog
+  - hexo
+keywords: hexo
+description: sudo rm -rf /*
+cover: 'https://s1.ax1x.com/2020/09/19/wIrG7t.jpg'
+abbrlink: e113653c
+date: 2019-02-26 22:33:17
+---
+<center>
+linux安装与初步使用ppt下载
+<!--more-->
+
+[点击下载](https://stuhytceducn-my.sharepoint.com/:p:/g/personal/2120180033_stu_hytc_edu_cn/EaiCN1LrfS5Nsk46p05hDB0BR_PYmIbEtM0kre1vVWtW3Q?e=IpjH0R)
+</center>

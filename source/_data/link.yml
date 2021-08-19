@@ -1,0 +1,161 @@
+- class_name: 友情链接
+  class_desc: 大佬们
+  link_list:
+    - link: https://liujunzhou.top
+      avatar: https://avatars.githubusercontent.com/JunzhouLiu
+      name: Junzhou Liu
+      descr: Happy Coding !
+
+    - link: https://asdfv1929.github.io
+      avatar: https://asdfv1929.github.io/images/headpic.jpg
+      name: asdfv1929
+      descr: 梦想没了行动，只会变成一场空想
+
+    - link: https://www.fghrsh.net
+      avatar: https://fp1.fghrsh.net/2017/10/11/d383a9ad4318c5b4332fe02845f5323a.jpg
+      name: FGHRSH
+      descr: FGHRSH 的博客
+
+    - link: http://www.gloomyghost.com
+      avatar: https://www.gloomyghost.com/assets/img/profile.png
+      name: GloomyGhost
+      descr: きょうはじさついいのよいひですね~ 
+
+    - link: https://xmmmmmovo.github.io
+      avatar: https://xmmmmmovo.github.io/favicon.png
+      name: 异国迷宫的十字路口
+      descr:
+
+    - link: https://www.muabl.cn
+      avatar: https://i.loli.net/2019/07/24/5d385247ddbd194490.jpg
+      name: M技术宅
+      descr: 专注于技术、软件、教程、资源、信息、数据分享！
+
+    - link: https://zhile.io/
+      avatar: https://avatars.githubusercontent.com/pengzhile
+      name: 知了
+      descr: 朝闻道,夕可眠矣。
+
+    - link: https://yihui.org
+      avatar: https://d33wubrfki0l68.cloudfront.net/42023922872cca83b20851f15088d1fd4236d084/e41a8/images/logo.png
+      name: Yihui Xie|谢益辉
+      descr: 
+
+    - link: https://www.leeyiding.com
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=1843272640&s=640
+      name: LeeYD · Blog
+      descr: May The Force Be With You!
+
+    - link: https://cungudafa.top/
+      avatar: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg
+      name: cungudafa
+      descr: 一个学习记录者
+
+    - link: https://wildwizard.cn/
+      avatar: https://image.wildwizard.cn/512cb3e0f3088adfd386926e62302cc0.jpg
+      name: 野生巫师页
+      descr: 明天再加把劲吧
+
+    - link: http://yyuzh.xyz/
+      avatar: https://i.loli.net/2020/02/25/yhFDpw2dqV4b3Gt.png
+      name: yuzh的博客
+      descr: yuzh的博客--永不停歇--Never Settle
+
+    - link: https://hahh9527.gitee.io/
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=1024830255&spec=100
+      name: 昏暗槐花的咸味小店
+      descr: 湖南人一枚
+
+    - link: https://zhaoq.me/
+      avatar: https://avatar.dawnlab.me/qq/1838575499
+      name: ZhaoQuinn ‘s Blog
+      descr: ZhaoQuinn ‘s Blog - 热爱科技，热爱生活.
+
+    - link: https://blog.tigerxly.com
+      avatar: https://tigerxlystatic.togotoo.top/wp-content/my_icon.jpg
+      name: FANTASY博客
+      descr: 记录学习、生活的小站
+
+    - link: https://moshanghua.net
+      avatar: https://cdn.jsdelivr.net/gh/imoshanghua/file/img/avatar.jpg
+      name: Xiaomo blog
+      descr: 等我熬尽一日苦，喂你一口甜。
+
+    - link: https://www.yuzijiangorz.xyz
+      avatar: https://www.yuzijiangorz.xyz/yzc.png
+      name: 鱼子酱的博客
+      descr: 一个HL屑OIER
+
+    - link: https://xmoe.xyz/
+      avatar: https://blog.xmoe.xyz/images/avatar.png
+      name: ArchyMoe
+      descr: Xmoe小站
+
+    - link: https://dlizi.com
+      avatar: https://cdn.dlizi.com/favicon.ico
+      name: 沐森西の博客
+      descr: 是微甜的呀
+
+    - link: https://hexo.yuanjh.cn/
+      avatar: https://hexo.yuanjh.cn/images_out/avatar.png
+      name: 闻鸡起舞
+      descr: 逝者如斯夫，不舍昼夜
+
+    - link: https://www.wangyusong.cn/
+      avatar: https://file.wangyusong.cn/2020/06/head.jpg
+      name: 独人欣赏
+      descr: 繁华落尽，独人欣赏。
+
+    - link: https://www.adaxh.site/
+      avatar: https://tvax1.sinaimg.cn/crop.0.0.640.640.180/a99a6e98ly8ggdx2amqlaj20hs0hswsl.jpg?KID
+      name: Ada – Home
+      descr: 卑微小前端，弱气后端
+
+    - link: https://yimuapp.cn/
+      avatar: https://cdn.jsdelivr.net/gh/w1915591935/yimuapp.cn/%5BThumb%5D640816222318-13565862-33f7-36fc-8c68-126e26a717ec(1).jpg
+      name: 一木博客
+      descr: 专注分享精致，免费的资源
+
+    - link: https://jackxjz.vercel.app/
+      avatar: https://cdn.jsdelivr.net/gh/xjz3103/cdn@1.6/img/social/touxiang.png
+      name: JACK小桔子的小屋
+      descr: 一个分享软件应用/插件/实用技巧的网站
+
+- class_name: 阵亡名单
+  class_desc: 定期晾晒
+  link_list:
+    - link: https://optimisticmtw.tk
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=1776673688&spec=100
+      name: Optimistic_MTW
+      descr: 我只知道一件事,就是我什么都不知道。
+	  
+    - link: http://smallpp.tk
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=884279483&spec=100
+      name: Smallpp
+      descr: 一只努力的小鹏鹏
+
+- class_name: 网站
+  class_desc: 值得推荐的网站（缓慢更新中。。）
+  link_list:
+    - link: https://hik.win/
+      avatar: https://hik.win/images/ico.png
+      name: 嗨客导航
+      descr: 一个纯净、简洁的浏览器主页。
+
+- class_name: 个人项目
+  class_desc: 充分说明这家伙是条咸鱼 |∀` )
+  link_list:
+    - link: https://muyulong.herokuapp.com
+      avatar: https://s2.ax1x.com/2019/08/21/mUFI1O.png
+      name: Youtube直通车
+      descr: 一个极不稳定，访问速度奇慢且停更的Youtube直通车
+	  
+    - link: http://muyulong.cf/
+      avatar: http://muyulong.cf/?/images/2019/08/16/hEPEYFNAZI/oneindex.jpg
+      name: Oneindex
+      descr: 一个基于Onedrive的网盘&图床（已挂）
+	  
+    - link: http://mmyyll.cf/
+      avatar: http://muyulong.cf/?/images/2019/08/16/hEPEYFNAZI/oneindex.jpg
+      name: Oneindex
+      descr: 一个基于Onedrive的网盘&图床（已挂）
