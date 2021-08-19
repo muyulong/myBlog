@@ -88,12 +88,14 @@ pipeline {
 }
 ```
 需要注意的是，如果你使用我的pipeline，那么记得要添加环境变量
-![](https://cdn.nlark.com/yuque/0/2020/png/1157944/1600609338075-c333ef35-c74d-4ea6-8bfe-403f36dde466.png#align=left&display=inline&height=391&margin=%5Bobject%20Object%5D&originHeight=391&originWidth=942&size=0&status=done&style=none&width=942)
+![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200033047.png)
+
 #### 腾讯云函数那些事
 云函数就是做为一个trigger来被语雀调用的，所以放在哪个平台都无所谓，腾讯和阿里的云函数的免费额度都够用了，哪个用着顺手用哪个
 首先新建一个云函数
-![](https://cdn.nlark.com/yuque/0/2020/png/1157944/1600610398837-9644825e-b43c-427a-b7e3-1c308dd2bf59.png#align=left&display=inline&height=512&margin=%5Bobject%20Object%5D&originHeight=512&originWidth=917&size=0&status=done&style=none&width=917)
+![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200033324.png)
 下面贴一下我的云函数代码
+
 ```python
 # -*- coding: utf8 -*-
 import requests
@@ -114,12 +116,13 @@ def main_handler(event, context):
     return response.text
 ```
 之后新建一个触发器，触发方式选择api网关触发就行了
-![](https://cdn.nlark.com/yuque/0/2020/png/1157944/1600610888196-d000c151-5f7a-44ba-9a7b-76381aad7cd5.png#align=left&display=inline&height=638&margin=%5Bobject%20Object%5D&originHeight=638&originWidth=882&size=0&status=done&style=none&width=882)
+![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200034151.png)
 创建完触发器之后，会得到一个访问路径
-![](https://cdn.nlark.com/yuque/0/2020/png/1157944/1600611009810-d6250cff-ffa2-4b89-8e5f-26db5ab7b19a.png#align=left&display=inline&height=489&margin=%5Bobject%20Object%5D&originHeight=489&originWidth=1151&size=0&status=done&style=none&width=1151)
+![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200034474.png)
+
 #### 在语雀上写文章
 首先需要新建一个知识库，然后在设置里面添加webhook，填入刚刚得到的访问路径
-![](https://cdn.nlark.com/yuque/0/2020/png/1157944/1600612738275-38e12a00-541d-4996-aa41-f58e09fc832b.png#align=left&display=inline&height=583&margin=%5Bobject%20Object%5D&originHeight=583&originWidth=1395&size=0&status=done&style=none&width=1395)
+![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200034171.png)
 另外，在hexo中同步语雀上的文章是通过[yuque-hexo](https://github.com/x-cold/yuque-hexo)这个插件实现的，关于TOKEN的配置和package.json文件的配置x-cold大佬都写得清楚了，我就不多赘述了。
 ## 还有什么？
 #### 针对hexo-theme-sakura主题的一些改进
@@ -187,5 +190,4 @@ module.exports = function(post) {
 另存为`hexo-Sakura.js`，放在`\yuque-hexo-Sakura\adapter`中，同时修改`package.json`文件中的`adapter`为`hexo-Sakura`。
 #### 为什么使用coding？
 因为网络问题，GitHub时不时抽风，而且coding的持续集成确实好用。。
-
 

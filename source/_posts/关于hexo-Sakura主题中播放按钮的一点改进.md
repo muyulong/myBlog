@@ -99,9 +99,9 @@ function $(Nid){
 如果你不想把css变得一团糟，那么关于播放功能的部分大概在1100行左右;-）
 ### 注意事项
 `sakura-app.js`这个文件里面貌似要加一行内容
-![](https://cdn.nlark.com/yuque/0/2020/png/1157944/1591525690743-2c03abd0-d937-4a4b-86e2-3e4f54d2dc14.png#align=left&display=inline&height=392&margin=%5Bobject%20Object%5D&name=&originHeight=392&originWidth=1589&size=0&status=done&style=none&width=1589)
+![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200127915.png)
 另外，我发现只要做好url的拼接，大部分支持外链的视频都可以作为背景视频
-![](https://cdn.nlark.com/yuque/0/2020/png/1157944/1591525772968-64b4ea3f-16a9-485d-bd31-77fdc360b126.png#align=left&display=inline&height=172&margin=%5Bobject%20Object%5D&name=&originHeight=172&originWidth=1838&size=0&status=done&style=none&width=1838)
+![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200128010.png)
 
 
-![](https://gitee.com/muyulong/blogpic/raw/master/image/0a0272a146a632bb1cbd43998493085a.jpg)
+<img src="https://gitee.com/muyulong/blogpic/raw/master/image/0a0272a146a632bb1cbd43998493085a.jpg" style="zoom:50%;" />
