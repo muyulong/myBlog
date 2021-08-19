@@ -104,7 +104,7 @@ favicon: /images/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /images/avatar.png
+  img: /images/avatar.jpg
   effect: false
 
 # Disable all banner image
@@ -115,7 +115,7 @@ index_img:
 # If the banner of page not setting, it will show the top_img
 default_top_img: images/cover/(0).jpg
 # The banner image of archive page
-archive_img: images/cover/archives.png
+archive_img: images/cover/archives.jpg
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
 tag_img: 
