@@ -86,14 +86,14 @@
       name: 鱼子酱的博客
       descr: 一个HL屑OIER
 
-    - link: https://xmoe.xyz/
-      avatar: https://blog.xmoe.xyz/images/avatar.png
+    - link: https://nekox.cn/
+      avatar: https://cdn.jsdelivr.net/gh/archymoe/cdn/avatar.png
       name: ArchyMoe
       descr: Xmoe小站
 
-    - link: https://dlizi.com
-      avatar: https://cdn.dlizi.com/favicon.ico
-      name: 沐森西の博客
+    - link: https://musenxi.com/
+      avatar: https://cdn.jsdelivr.net/gh/Musenxi/CDN/favicon.png
+      name: 霂森西
       descr: 是微甜的呀
 
     - link: https://hexo.yuanjh.cn/
@@ -120,6 +120,11 @@
       avatar: https://cdn.jsdelivr.net/gh/xjz3103/cdn@1.6/img/social/touxiang.png
       name: JACK小桔子的小屋
       descr: 一个分享软件应用/插件/实用技巧的网站
+      
+    - link: https://iktao.cn/
+      avatar: https://cdn.jsdelivr.net/gh/taoggt/image/img/a12.png
+      name: TAOG 的小站
+      descr: 一个小破博客
 
 - class_name: 阵亡名单
   class_desc: 定期晾晒
