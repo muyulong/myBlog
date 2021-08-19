@@ -22,6 +22,20 @@ menu:
   RSS: /atom.xml || fas fa-rss-square
   开往: https://travellings.link || fas fa-rocket
 
+# Artitalk
+# see https://artitalk.js.org/
+artitalk:
+  enable: true
+  appId: s36F6BBszGKxEo1EbX4YaHD4-MdYXbMMI
+  appKey: N0PrGWjSCqNuvIASoNydma0Y
+  path:
+  js:
+  option:
+    shuoPla: '写点什么。。。'
+    bgImg: 'https://gitee.com/muyulong/blogpic/raw/master/image/jike_357639528434544_pic.gif'
+  front_matter:
+
+
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
 
