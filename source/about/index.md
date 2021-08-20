@@ -3,7 +3,7 @@ title: 关于
 date: 2018-07-24 21:20:32
 description: 
 comments: false
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/about.jpg
+top_img: https://gitee.com/muyulong/blogpic/raw/master/image/202108201230732.jpg
 ---
 ## 关于博主
 ### 牧鱼龙
