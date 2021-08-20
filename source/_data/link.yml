@@ -80,6 +80,11 @@
       avatar: https://cdn.jsdelivr.net/gh/taoggt/image/img/a12.png
       name: TAOG 的小站
       descr: 一个小破博客
+      
+    - link: https://tian.men/
+      avatar: https://i.loli.net/2021/08/20/VDc2yejmiP8g1Ga.jpg
+      name: 天门
+      descr: 有次鞭鞘陆续鸣，赭袍当殿万簪缨。
 
 - class_name: 阵亡名单
   class_desc: 定期晾晒
