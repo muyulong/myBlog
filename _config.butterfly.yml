@@ -619,9 +619,9 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: true
+  enable: false
   # Typewriter Effect (打字效果)
-  effect: true
+  effect: false
   # loop (循環打字)
   loop: false
   # source調用第三方服務
