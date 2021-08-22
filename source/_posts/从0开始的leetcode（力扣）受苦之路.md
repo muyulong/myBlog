@@ -5,7 +5,7 @@ tags:
   - leetcode
   - 力扣
 keywords: leetcode
-description: 早死早超生，我就是弱智
+description: 新生代农民工毫不畏惧
 cover: 'https://s1.ax1x.com/2020/06/03/tdpJZ8.jpg'
 abbrlink: 66f275e8
 date: 2020-05-28 15:20:43
@@ -33,6 +33,7 @@ var twoSum = function(nums, target) {
 ```
 显然，这个方法很捞，但我目前几乎没有什么编程能力，只能等以后系统学习了JavaScript再来重做了。。
 ![](https://gitee.com/muyulong/blogpic/raw/master/image/fe1d7199cd03767da6b6b8bb8f5da9ca.gif)
+
 ### 2.两数相加
 *给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。

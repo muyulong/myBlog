@@ -4,14 +4,17 @@ categories: 技术
 tags:
   - hexo
   - 教程
+  - 博客
 keywords: coding 语雀 hexo
-description: 这样就能好好写博客了吗
+description: 这样就能好好写博客了吗？
 cover: 'https://gitee.com/muyulong/blogpic/raw/master/image/20200604171935.png'
 abbrlink: 1ae85bf0
 date: 2020-06-09 17:21:02
 ---
 
-
+{% note warning simple %}
+这是一篇早期的教程文章，里面的内容可能已经过时或废弃，请注意甄别。
+{% endnote %}
 
 ## 这是什么？
 这是一个方案，能够让你在语雀平台上进行云端写作，并且自动部署到你的静态博客中。

@@ -3,7 +3,7 @@ title: Hexo-NexT/Sakura 博客添加相册功能总结
 categories: 技术
 tags:
   - 教程
-  - blog
+  - 博客
   - hexo
 keywords: hexo
 description: 2020年3月6日更新！！
@@ -11,6 +11,10 @@ cover: 'https://s2.ax1x.com/2020/03/07/3j0sTx.png'
 abbrlink: '80145523'
 date: 2018-12-13 18:01:02
 ---
+{% note warning simple %}
+这是一篇早期的教程文章，里面的内容可能已经过时或废弃，请注意甄别。
+{% endnote %}
+
 想要在自己的博客里添加一个相册功能，可以放一些照片进去展示。
 
 当时我使用的是[hexo-NexT](https://github.com/theme-next/hexo-theme-next)主题，所以所有的操作都是在这个主题下完成的。
@@ -172,7 +176,7 @@ lazyload:
   enable: true
   onlypost: false
   loadingImg: # eg. ./images/loading.png
-  ```
+```
 安装`fancybox`
 ```
 $ cd themes/next
@@ -245,7 +249,7 @@ lazyload:
   enable: true
   onlypost: false
   loadingImg: # eg. ./images/loading.png
-  ```
+```
 由于Hexo-Sakura自带了fancybox，所以无需再次安装。
 
 在` hexo/source/ `目录下建立` pictures `文件夹,里面新建index.md文件，添加

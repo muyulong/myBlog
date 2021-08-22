@@ -162,57 +162,22 @@ sitemap:
 baidusitemap:
     path: baidusitemap.xml
 
-# index2 generator是否包含官方的hexo-generator-index，默认true（包含）
-index2_include_index: true # defult is true
-
-# 配置index2 generator，可以是数组或对象
-index2_generator:
-  per_page: 10
-  order_by: -date
- # include:
- #   - category Web # 只包含Web分类下的文章
-  exclude:
-    - tag hide # 不包含标签为hide的文章
-    - category hide # 不包含分类为hide的文章
-
 # lazyload
 #lazyload:
 #  enable: false
 #  onlypost: false
 #  loadingImg: # eg. ./images/loading.png
  
+# Security
+encrypt: # hexo-blog-encrypt
+  abstract: 有东西被加密了，请输入密码查看。
+  message: 您好，这里需要密码。
+  tags:
+  - {name: 日记, password: yu2000yao0505}
+  - {name: 待定, password: 20000505}
+  theme: up
+  wrong_pass_message: 抱歉，这个密码看着不太对，请再试试。
+  wrong_hash_message: 抱歉，这个文章不能被校验，不过您还是能看看解密后的内容。
+
 kramed:
   smartypants: false
-# hexo-neat
-# md博文压缩
-neat_enable: true
-# 压缩html（ejs，swig等也属于html格式片段）
-neat_html:
-  enable: true
-  exclude:
-# 压缩css  
-neat_css:
-  enable: true
-  exclude:
-    - '*.min.css'
-    - '**/*.min.css'
-    - 'jquery.fancybox.min.css'
-    - '**/live2d-widget/waifu.css'
-    - '**/style.css'
-# 压缩js
-neat_js:
-  enable: true
-  mangle: true 
-  #打印日志
-  output:
-  compress:
-  exclude: #排除文件
-    - '*.min.js'
-    - '**/*.min.js'
-    - 'jquery.fancybox.min.js'
-    - '**/live2d-widget/*.js'
-    - '**/live2d-widget/*.min.js'
-    - '**/jquery.fancybox.pack.js'
-    - '**/index.js'  
-    - '**/love.js'
-    - '**/photo.js'

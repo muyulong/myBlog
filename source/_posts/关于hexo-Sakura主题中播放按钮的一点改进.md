@@ -3,7 +3,7 @@ title: 关于hexo-Sakura主题中播放按钮的一点改进
 categories: 技术
 tags:
   - hexo
-  - blog
+  - 博客
 keywords: hexo-sakura
 description: 并没有什么卵用。。
 cover: 'https://gitee.com/muyulong/blogpic/raw/master/image/sakura.png'
@@ -11,13 +11,15 @@ abbrlink: 37ef2584
 date: 2020-06-04 17:25:15
 ---
 
-
+{% note warning simple %}
+这是一篇早期的教程文章，里面的内容可能已经过时或废弃，请注意甄别。
+{% endnote %}
 
 发现hexo-Sakura主题中首页的右下角有一个播放按钮。
 
-
 ![](https://gitee.com/muyulong/blogpic/raw/master/image/20200607173620.png)
 点击按钮之后就可以播放一个视频，看着这个按钮我总觉得少点什么，于是我决定给它加一个全屏功能。
+
 ### 绘制图标
 首先打开一个像素绘图软件，这里我用的是ArtCursors，为了能够绘制出和原版一样风格的按钮，我载入了原版的图标
 ![](https://gitee.com/muyulong/blogpic/raw/master/image/20200607174527.png)

@@ -3,7 +3,7 @@ title: linux安装与初步使用
 categories: 资源
 tags:
   - 教程
-  - blog
+  - 博客
   - hexo
 keywords: hexo
 description: sudo rm -rf /*

@@ -14,7 +14,7 @@ date: 2019-12-11 20:55:19
 ### 实验 1
 
 **生成一个日历类，输入日期后能正确输出对应的星期。例如，输入 2019,12,10 应能正确输出 星期二 。**
-```
+```java
 public class CalculateWeekDay{
     public static void CalculateWeekDay(int y, int m, int d) {
         if(m < 1 || m >12){
@@ -57,7 +57,7 @@ public class CalculateWeekDay{
 ### 实验 2
 
 **使用递归计算出 1*2*3*4*5*.....*30 的值并输出，使用递归计算 1+2+3+4+5+.....+1000 的值并输出。**
-```
+```java
 public class DiGui {
 	public static int jicheng(int n) {
 		if(n==1||n==0)
@@ -80,7 +80,7 @@ public class DiGui {
 ### 实验 3
 
 **给定数组 1,5,3,7,11,6,13,9,8，找出该数组的最大值，求出该数组的平均值，对该数组求和并求出数组长度。**
-```
+```java
 public class FindMax {
 	public static void main(String[] args) {
 		int[] arr= {1,5,3,7,11,6,13,9,8};
@@ -103,7 +103,7 @@ public class FindMax {
 ### 实验 4
 
 **第 3 章课后习题 103 页第五大题编程题 1**
-```
+```java
 class Student{
 	private String name;
 	private double  grade;
@@ -141,7 +141,7 @@ public class Test {
 ### 实验 5
 
 **第 4 章课后习题 153 页第五大题编程题 1**
-```
+```java
 /*Student.java*/
 public class Student {
 	public String name;
@@ -178,7 +178,7 @@ public class Test01{
 }
 ```
 **第 4 章课后习题 153 页第五大题编程题 2**
-```
+```java
 /*Shape.java*/
 public abstract class Shape {
 	public abstract double area();
@@ -242,7 +242,7 @@ public class test2 {
 ### 实验 6
 
 **第 10 章课后习题 387 页第五大题编程题 1**
-```
+```java
 public class Test01 {
 	public static void main(String[] args) {
 		Teacher t = new Teacher();
