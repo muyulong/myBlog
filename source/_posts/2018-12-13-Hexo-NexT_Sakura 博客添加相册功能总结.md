@@ -20,6 +20,7 @@ date: 2018-12-13 18:01:02
 当时我使用的是[hexo-NexT](https://github.com/theme-next/hexo-theme-next)主题，所以所有的操作都是在这个主题下完成的。
 但是当我将博客的主题换成[hexo-Sakura](https://github.com/honjun/hexo-theme-sakura)时，我需要再次添加这个功能。
 # hexo-NexT
+
 以下，是在[hexo-NexT](https://github.com/theme-next/hexo-theme-next)主题下的操作过程。
 
 参考的教程链接：
