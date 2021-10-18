@@ -7,7 +7,7 @@ top_img: https://gitee.com/muyulong/blogpic/raw/master/image/202108201230732.jpg
 ---
 ## 关于博主
 ### 牧鱼龙
-2000年来到地球，性别男，就读于某垫底二本院校。
+2000年来到地球，性别男，就读于某不垫底二本院校。
 性格类型：[INTJ-T](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC) [5w4](http://www.jxrgw.com/jichu/ceyi/257.html)
 学生党、00后、伪技术宅、肥肥、穷
 对3C产品感兴趣，对IT兴趣浓厚，是一位成绩不佳的学生。
