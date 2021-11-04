@@ -86,6 +86,11 @@
       name: 天门
       descr: 有次鞭鞘陆续鸣，赭袍当殿万簪缨。
 
+    - link: https://www.qiumu.club/
+      avatar: https://qiumuu.gitee.io/mdchat/ico/3.jpg
+      name: 秋木小站
+      descr: 政论分享
+
 - class_name: 阵亡名单
   class_desc: 定期晾晒
   link_list:
