@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "data": {
+    "Pie": {
+      "series": [{
+        "name": "碳水化合物",
+        "data": 50
+      }, {
+        "name": "钙",
+        "data": 30
+      }, {
+        "name": "镁",
+        "data": 18
+      }, {
+        "name": "脂肪",
+        "data": 18
+      }, {
+        "name": "葡萄糖",
+        "data": 10
+      }]
+    }
+  }
+}
+
