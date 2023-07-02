@@ -30,8 +30,9 @@ artitalk:
   appId: s36F6BBszGKxEo1EbX4YaHD4-MdYXbMMI
   appKey: N0PrGWjSCqNuvIASoNydma0Y
   path:
-  js:
+  js: https://unpkg.com/artitalk/artitalk.js
   option:
+    serverURL: https://artitalk.mmyyll.ml/
     shuoPla: '写点什么。。。'
     bgImg: 'https://cdn.mmyyll.ml/image/jike_357639528434544_pic.gif'
   front_matter:
@@ -379,7 +380,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://myl-twikoo-one.vercel.app/
+  envId: https://comment.mmyyll.ml/
   region:
   visitor: true
   option:
