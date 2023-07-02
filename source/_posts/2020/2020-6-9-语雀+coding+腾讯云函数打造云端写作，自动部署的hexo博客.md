@@ -7,7 +7,7 @@ tags:
   - 博客
 keywords: coding 语雀 hexo
 description: 这样就能好好写博客了吗？
-cover: 'https://gitee.com/muyulong/blogpic/raw/master/image/20200604171935.png'
+cover: 'https://cdn.mmyyll.ml/image/20200604171935.png'
 abbrlink: 1ae85bf0
 date: 2020-06-09 17:21:02
 ---
@@ -91,12 +91,12 @@ pipeline {
 }
 ```
 需要注意的是，如果你使用我的pipeline，那么记得要添加环境变量
-![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200033047.png)
+![](https://cdn.mmyyll.ml/image/202108200033047.png)
 
 #### 腾讯云函数那些事
 云函数就是做为一个trigger来被语雀调用的，所以放在哪个平台都无所谓，腾讯和阿里的云函数的免费额度都够用了，哪个用着顺手用哪个
 首先新建一个云函数
-![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200033324.png)
+![](https://cdn.mmyyll.ml/image/202108200033324.png)
 下面贴一下我的云函数代码
 
 ```python
@@ -119,13 +119,13 @@ def main_handler(event, context):
     return response.text
 ```
 之后新建一个触发器，触发方式选择api网关触发就行了
-![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200034151.png)
+![](https://cdn.mmyyll.ml/image/202108200034151.png)
 创建完触发器之后，会得到一个访问路径
-![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200034474.png)
+![](https://cdn.mmyyll.ml/image/202108200034474.png)
 
 #### 在语雀上写文章
 首先需要新建一个知识库，然后在设置里面添加webhook，填入刚刚得到的访问路径
-![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200034171.png)
+![](https://cdn.mmyyll.ml/image/202108200034171.png)
 另外，在hexo中同步语雀上的文章是通过[yuque-hexo](https://github.com/x-cold/yuque-hexo)这个插件实现的，关于TOKEN的配置和package.json文件的配置x-cold大佬都写得清楚了，我就不多赘述了。
 ## 还有什么？
 #### 针对hexo-theme-sakura主题的一些改进

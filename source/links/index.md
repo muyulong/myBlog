@@ -2,7 +2,7 @@
 title: 友链
 date: 2021-08-18 19:29:41
 type: "link"
-top_img: https://gitee.com/muyulong/blogpic/raw/master/image/202108201230065.jpg
+top_img: https://cdn.mmyyll.ml/image/202108201230065.jpg
 ---
 欢迎交换友链 ꉂ(ˊᗜˋ)
 

@@ -6,7 +6,7 @@ tags:
   - 博客
 keywords: hexo-sakura
 description: 并没有什么卵用。。
-cover: 'https://gitee.com/muyulong/blogpic/raw/master/image/sakura.png'
+cover: 'https://cdn.mmyyll.ml/image/sakura.png'
 abbrlink: 37ef2584
 date: 2020-06-04 17:25:15
 ---
@@ -17,18 +17,18 @@ date: 2020-06-04 17:25:15
 
 发现hexo-Sakura主题中首页的右下角有一个播放按钮。
 
-![](https://gitee.com/muyulong/blogpic/raw/master/image/20200607173620.png)
+![](https://cdn.mmyyll.ml/image/20200607173620.png)
 点击按钮之后就可以播放一个视频，看着这个按钮我总觉得少点什么，于是我决定给它加一个全屏功能。
 
 ### 绘制图标
 首先打开一个像素绘图软件，这里我用的是ArtCursors，为了能够绘制出和原版一样风格的按钮，我载入了原版的图标
-![](https://gitee.com/muyulong/blogpic/raw/master/image/20200607174527.png)
+![](https://cdn.mmyyll.ml/image/20200607174527.png)
 
 
 擦除中间的图案，然后使用吸管吸取主颜色，绘制出图标后另存为`full-32x32.png`备用
 
 
-![](https://gitee.com/muyulong/blogpic/raw/master/image/20200607174736.png)
+![](https://cdn.mmyyll.ml/image/20200607174736.png)
 ### 主题修改
 #### JavaScript功能
 打开Sakura主题根目录，打开`source\js`,新建一个`fullscreenElement.js`文件，代码如下
@@ -101,9 +101,9 @@ function $(Nid){
 如果你不想把css变得一团糟，那么关于播放功能的部分大概在1100行左右;-）
 ### 注意事项
 `sakura-app.js`这个文件里面貌似要加一行内容
-![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200127915.png)
+![](https://cdn.mmyyll.ml/image/202108200127915.png)
 另外，我发现只要做好url的拼接，大部分支持外链的视频都可以作为背景视频
-![](https://gitee.com/muyulong/blogpic/raw/master/image/202108200128010.png)
+![](https://cdn.mmyyll.ml/image/202108200128010.png)
 
 
-<img src="https://gitee.com/muyulong/blogpic/raw/master/image/0a0272a146a632bb1cbd43998493085a.jpg" style="zoom:50%;" />
+<img src="https://cdn.mmyyll.ml/image/0a0272a146a632bb1cbd43998493085a.jpg" style="zoom:50%;" />

@@ -3,7 +3,7 @@ title: 留言板
 date: 2018-12-20 23:13:48
 description: 
 comments: true
-top_img: https://gitee.com/muyulong/blogpic/raw/master/image/202108201230828.jpg
+top_img: https://cdn.mmyyll.ml/image/202108201230828.jpg
 ---
 {% raw %}
     <h3><p id="hitokoto_text">:D 获取中...</p></h3>

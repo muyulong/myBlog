@@ -6,7 +6,7 @@ tags:
   - 开箱
 password: 20000505
 description: 精巧小身材 畅玩新世代
-cover: 'https://gitee.com/muyulong/blogpic/raw/master/image/202108201340748.jpg'
+cover: 'https://cdn.mmyyll.ml/image/202108201340748.jpg'
 abbrlink: 1e764aca
 date: 2021-08-20 13:27:55
 ---
