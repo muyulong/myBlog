@@ -14,7 +14,7 @@ top_img: https://cdn.muyulong.top/image/202108201230065.jpg
 
 For Example：
 link: https://blog.muyulong.top/
-avatar: [获取嵌入代码](https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.6/img/custom/avatar.png)
+avatar: [获取嵌入代码](cdn.muyulong.top/image/avatar.png)
 name: Muyulong's Blog
 descr: Just write something...
 

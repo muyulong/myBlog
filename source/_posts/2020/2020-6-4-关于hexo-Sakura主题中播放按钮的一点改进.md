@@ -102,7 +102,7 @@ function $(Nid){
 
 ```css
 #video-full {
-    background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.8/img/other/full@32x32.png');
+    background-image:url('cdn.muyulong.top/image/full@32x32.png');
     bottom:90px;
     display:none
 }
