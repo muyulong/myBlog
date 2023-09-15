@@ -14,10 +14,9 @@ top_img: https://cdn.muyulong.top/image/202108201230065.jpg
 
 For Example：
 link: https://blog.muyulong.top/
-avatar: [获取嵌入代码](cdn.muyulong.top/image/avatar.png)
+avatar: [获取嵌入代码](https://cdn.muyulong.top/image/avatar.png)
 name: Muyulong's Blog
 descr: Just write something...
-
 
 ※ 为保证友链质量，今后新申请的友链将经过筛选，请在收到我的回复邮件后再于贵站添加本站链接。原则上过去已添加友链不会轻易删除，如遇死链、改变网站用途（友链主要针对的是同类的博客），将单独移至“阵亡名单”分类中，下次清理时未整改的将移除；如遇盗版、破解、网页植入挖矿脚本、极低质量内容、单方面移除本站链接，将直接移除，恕不另行通知。
 ※ ps：如果没有头像的可以提供qq号，我会使用qq头像作为logo
