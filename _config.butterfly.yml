@@ -32,12 +32,12 @@ artitalk:
   path:
   js: https://unpkg.com/artitalk/artitalk.js
   option:
-    serverURL: https://artitalk.mmyyll.ml/
+    serverURL: https://artitalk.muyulong.top/
     shuoPla: '写点什么。。。'
-    bgImg: 'https://cdn.mmyyll.ml/image/jike_357639528434544_pic.gif'
+    bgImg: 'https://cdn.muyulong.top/image/jike_357639528434544_pic.gif'
   front_matter:
     comments: false
-    top_img: https://cdn.mmyyll.ml/image/202108201230953.jpg
+    top_img: https://cdn.muyulong.top/image/202108201230953.jpg
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -380,7 +380,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://comment.mmyyll.ml/
+  envId: https://comment.muyulong.top/
   region:
   visitor: true
   option:

@@ -7,7 +7,7 @@ tags:
   - 博客
 keywords: coding 语雀 hexo
 description: 这样就能好好写博客了吗？
-cover: 'https://cdn.mmyyll.ml/image/20200604171935.png'
+cover: 'https://cdn.muyulong.top/image/20200604171935.png'
 abbrlink: 1ae85bf0
 date: 2020-06-09 17:21:02
 ---
@@ -17,25 +17,33 @@ date: 2020-06-09 17:21:02
 {% endnote %}
 
 ## 这是什么？
+
 这是一个方案，能够让你在语雀平台上进行云端写作，并且自动部署到你的静态博客中。
 参考教程：
 [Hexo 博客终极玩法：云端写作，自动部署](https://segmentfault.com/a/1190000017797561)
 [Hexo：语雀云端写作 Coding 持续集成实现自动部署](https://www.yuque.com/jideanshichifan/hexo/zy4wle)
-#### 原理
+
+### 原理
 
 - coding持续集成编译博客源码构建静态文件
 - 使用腾讯云函数调用coding构建的api
 - 语雀的webhook功能调用腾讯云的函数调用
+
 ## 语雀是什么？
+
 > [百度百科](https://baike.baidu.com/item/%E8%AF%AD%E9%9B%80/24190957)：语雀，是阿里内部孵化的一款文档与知识管理工具。语雀使用了“结构化知识库管理”，形式上类似书籍的目录。与其他产品可以随意建立文档不同，语雀上的每一篇文档必须属于某一个知识库，语雀希望通过这样的产品设计，来从源头上帮助用户建立起知识管理的意识，培养良好的知识管理习惯。
 
 简单的说，语雀就是阿里推出的一个结构化管理的云端写作的平台，在这个平台上用户可以自由地创建管理文档。
+
 ## 怎么配置？
-#### coding上遇到的一些坑
+
+### coding上遇到的一些坑
+
 在coding上实现hexo的自动化部署可以参考[这篇文章](https://yuxihan.com/20191212.html)
 简单来说就是把原本存放在本地的hexo放到了coding上，并且使用了coding的服务器来完成编译、提交等操作。
 关于coding上的持续集成也可以参考官方的[文章](https://zhuanlan.zhihu.com/p/55975297)
 下面是我自己的pipeline，仅供参考
+
 ```groovy
 pipeline {
   agent {
@@ -53,10 +61,10 @@ pipeline {
     stage('环境') {
       steps {
         echo '构建中...'
-		sh 'npm install -g cnpm --registry=https://registry.npm.taobao.org'
+    sh 'npm install -g cnpm --registry=https://registry.npm.taobao.org'
         sh 'cnpm install'
-		sh 'npm run clean:yuque'
-		sh 'npm run sync'
+    sh 'npm run clean:yuque'
+    sh 'npm run sync'
         sh 'hexo -v'
         echo '构建完成.'
       }
@@ -90,13 +98,15 @@ pipeline {
   }
 }
 ```
+
 需要注意的是，如果你使用我的pipeline，那么记得要添加环境变量
-![](https://cdn.mmyyll.ml/image/202108200033047.png)
+![png](https://cdn.muyulong.top/image/202108200033047.png)
 
 #### 腾讯云函数那些事
+
 云函数就是做为一个trigger来被语雀调用的，所以放在哪个平台都无所谓，腾讯和阿里的云函数的免费额度都够用了，哪个用着顺手用哪个
 首先新建一个云函数
-![](https://cdn.mmyyll.ml/image/202108200033324.png)
+![png](https://cdn.muyulong.top/image/202108200033324.png)
 下面贴一下我的云函数代码
 
 ```python
@@ -118,18 +128,24 @@ def main_handler(event, context):
 
     return response.text
 ```
+
 之后新建一个触发器，触发方式选择api网关触发就行了
-![](https://cdn.mmyyll.ml/image/202108200034151.png)
+![png](https://cdn.muyulong.top/image/202108200034151.png)
 创建完触发器之后，会得到一个访问路径
-![](https://cdn.mmyyll.ml/image/202108200034474.png)
+![png](https://cdn.muyulong.top/image/202108200034474.png)
 
 #### 在语雀上写文章
+
 首先需要新建一个知识库，然后在设置里面添加webhook，填入刚刚得到的访问路径
-![](https://cdn.mmyyll.ml/image/202108200034171.png)
+![png](https://cdn.muyulong.top/image/202108200034171.png)
 另外，在hexo中同步语雀上的文章是通过[yuque-hexo](https://github.com/x-cold/yuque-hexo)这个插件实现的，关于TOKEN的配置和package.json文件的配置x-cold大佬都写得清楚了，我就不多赘述了。
+
 ## 还有什么？
-#### 针对hexo-theme-sakura主题的一些改进
+
+### 针对hexo-theme-sakura主题的一些改进
+
 因为我的博客使用的主题是[hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)，yuque-hexo这个插件里面自带的front-matter适配有一些问题，所以我自己添加了一个配置文件，代码如下
+
 ```javascript
 'use strict';
 
@@ -189,8 +205,10 @@ module.exports = function(post) {
   return text;
 };
 ```
+
 实测以上代码可以完美适配hexo-theme-sakura主题，如果想使用的话复制代码另存为
 另存为`hexo-Sakura.js`，放在`\yuque-hexo-Sakura\adapter`中，同时修改`package.json`文件中的`adapter`为`hexo-Sakura`。
-#### 为什么使用coding？
-因为网络问题，GitHub时不时抽风，而且coding的持续集成确实好用。。
 
+### 为什么使用coding？
+
+因为网络问题，GitHub时不时抽风，而且coding的持续集成确实好用。。

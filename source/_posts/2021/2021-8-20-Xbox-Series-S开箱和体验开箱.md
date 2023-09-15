@@ -1,12 +1,12 @@
 ---
-title: Xbox Series S开箱
+title: Xbox Series S开箱和体验
 categories: 生活
 tags:
   - xbox
   - 开箱
 password: 20000505
 description: 精巧小身材 畅玩新世代
-cover: 'https://cdn.mmyyll.ml/image/202108201340748.jpg'
+cover: 'https://cdn.muyulong.top/image/202108201340748.jpg'
 abbrlink: 1e764aca
 date: 2021-08-20 13:27:55
 ---
