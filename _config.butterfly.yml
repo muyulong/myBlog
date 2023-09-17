@@ -12,16 +12,16 @@ menu:
     时间轴: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  #清单||fa fa-heartbeat:
+  #  清单||fa fa-heartbeat:
   #  音乐: /music/ || fas fa-music
   #  图集: /pictures/ || fas fa-images
   #  影视: /bangumi/ || fas fa-video
-  留言板: /comment/ || fas fa-comment-dots
+  留言板: /comment/ || fas fa-comments
   说说: /artitalk/ || fas fa-comment-dots
   友链: /links/ || fas fa-link
   关于: /about/ || fas fa-heart
   RSS: /atom.xml || fas fa-rss-square
-  开往: https://travellings.link || fas fa-rocket
+  # 开往: https://travellings.link || fas fa-rocket
 
 # Artitalk
 # see https://artitalk.js.org/
@@ -103,24 +103,24 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /images/favicon.png
+favicon: https://cdn.muyulong.top/image/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /images/avatar.jpg
+  img: https://cdn.muyulong.top/image/avatar.jpg
   effect: false
 
 # Disable all banner image
-disable_top_img: false
+disable_top_img: true
 
 # The banner image of home page
 index_img:
 # If the banner of page not setting, it will show the top_img
 default_top_img: 
-  images/cover/(0).jpg
+  https://cdn.muyulong.top/image/(0).jpg
 # The banner image of archive page
 archive_img: 
-  images/cover/archives.jpg
+  https://cdn.muyulong.top/image/archives.jpg
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
 tag_img: 
@@ -209,10 +209,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-     - img: /images/wechat.jpg
+     - img: https://cdn.muyulong.top/image/wechat.jpg
        link:
        text: wechat
-     - img: /images/alipay.jpg
+     - img: https://cdn.muyulong.top/image/alipay.jpg
        link:
        text: alipay
 
@@ -431,7 +431,7 @@ footer:
   owner:
     enable: true
     since: 2018
-  custom_text: 由<a href="https://www.netlify.com/">Netlify</a>强力驱动&nbsp;&nbsp;由<a href="https://www.cloudflare.com/">Cloudflare</a>加速</br><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278696345'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1278696345' type='text/javascript'%3E%3C/script%3E"));</script>
+  custom_text: 由<a href="https://www.netlify.com/">Netlify</a>强力驱动&nbsp;&nbsp;由<a href="https://www.cloudflare.com/">Cloudflare</a>加速
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -831,7 +831,7 @@ lazyload:
   enable: true
   field: site # site/post
   placeholder:
-  blur: false
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline

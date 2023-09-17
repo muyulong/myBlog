@@ -13,7 +13,7 @@ top_img: https://cdn.muyulong.top/image/202108201230065.jpg
 4、一句话介绍（熟人我会亲自帮写的）
 
 For Example：
-link: https://blog.muyulong.top/
+link: <https://blog.muyulong.top>
 avatar: [获取嵌入代码](https://cdn.muyulong.top/image/avatar.png)
 name: Muyulong's Blog
 descr: Just write something...
