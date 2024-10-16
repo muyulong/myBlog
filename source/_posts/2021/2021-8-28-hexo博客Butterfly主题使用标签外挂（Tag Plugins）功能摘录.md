@@ -4,7 +4,7 @@ categories: 转载
 tags:
   - hexo
   - 博客
-cover: 'https://gitee.com/muyulong/blogpic/raw/master/image/202108291602631.jpg'
+cover: 'https://cdn.muyulong.top/image/202108291602631.jpg'
 abbrlink: 9cd65435
 date: 2021-08-28 15:46:44
 description:

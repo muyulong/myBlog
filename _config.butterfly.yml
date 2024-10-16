@@ -12,16 +12,16 @@ menu:
     时间轴: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  #清单||fa fa-heartbeat:
+  #  清单||fa fa-heartbeat:
   #  音乐: /music/ || fas fa-music
   #  图集: /pictures/ || fas fa-images
   #  影视: /bangumi/ || fas fa-video
-  留言板: /comment/ || fas fa-comment-dots
+  留言板: /comment/ || fas fa-comments
   说说: /artitalk/ || fas fa-comment-dots
   友链: /links/ || fas fa-link
   关于: /about/ || fas fa-heart
   RSS: /atom.xml || fas fa-rss-square
-  开往: https://travellings.link || fas fa-rocket
+  # 开往: https://travellings.link || fas fa-rocket
 
 # Artitalk
 # see https://artitalk.js.org/
@@ -30,13 +30,14 @@ artitalk:
   appId: s36F6BBszGKxEo1EbX4YaHD4-MdYXbMMI
   appKey: N0PrGWjSCqNuvIASoNydma0Y
   path:
-  js:
+  js: https://unpkg.com/artitalk/artitalk.js
   option:
+    serverURL: https://artitalk.muyulong.top/
     shuoPla: '写点什么。。。'
-    bgImg: 'https://gitee.com/muyulong/blogpic/raw/master/image/jike_357639528434544_pic.gif'
+    bgImg: 'https://cdn.muyulong.top/image/jike_357639528434544_pic.gif'
   front_matter:
     comments: false
-    top_img: https://gitee.com/muyulong/blogpic/raw/master/image/202108201230953.jpg
+    top_img: https://cdn.muyulong.top/image/202108201230953.jpg
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -102,24 +103,24 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /images/favicon.png
+favicon: https://cdn.muyulong.top/image/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /images/avatar.jpg
+  img: https://cdn.muyulong.top/image/avatar.jpg
   effect: false
 
 # Disable all banner image
-disable_top_img: false
+disable_top_img: true
 
 # The banner image of home page
 index_img:
 # If the banner of page not setting, it will show the top_img
 default_top_img: 
-  images/cover/(0).jpg
+  https://cdn.muyulong.top/image/(0).jpg
 # The banner image of archive page
 archive_img: 
-  images/cover/archives.jpg
+  https://cdn.muyulong.top/image/archives.jpg
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
 tag_img: 
@@ -208,10 +209,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-     - img: /images/wechat.jpg
+     - img: https://cdn.muyulong.top/image/wechat.jpg
        link:
        text: wechat
-     - img: /images/alipay.jpg
+     - img: https://cdn.muyulong.top/image/alipay.jpg
        link:
        text: alipay
 
@@ -379,7 +380,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://myl-twikoo-one.vercel.app/
+  envId: https://comment.muyulong.top/
   region:
   visitor: true
   option:
@@ -430,7 +431,7 @@ footer:
   owner:
     enable: true
     since: 2018
-  custom_text: 由<a href="https://www.netlify.com/">Netlify</a>强力驱动&nbsp;&nbsp;由<a href="https://www.cloudflare.com/">Cloudflare</a>加速</br><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278696345'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1278696345' type='text/javascript'%3E%3C/script%3E"));</script>
+  custom_text: 由<a href="https://www.netlify.com/">Netlify</a>强力驱动&nbsp;&nbsp;由<a href="https://www.cloudflare.com/">Cloudflare</a>加速
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -801,8 +802,8 @@ pjax:
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: true
-  per_page: true
+  enable: false
+  per_page: false
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -830,7 +831,7 @@ lazyload:
   enable: true
   field: site # site/post
   placeholder:
-  blur: false
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -845,11 +846,11 @@ lazyload:
 #  mask_icon: /images/pwa/pwaicons/safari-pinned-tab.svg
 pwa:
   enable: true
-  manifest: /img/pwa/manifest.json
-  apple_touch_icon: /img/pwa/apple-touch-icon.png
-  favicon_32_32: /img/pwa/32.png
-  favicon_16_16: /img/pwa/16.png
-  mask_icon: /img/pwa/safari-pinned-tab.svg
+  manifest: /images/pwa/manifest.json
+  apple_touch_icon: /images/pwa/apple-touch-icon.png
+  favicon_32_32: /images/pwa/32.png
+  favicon_16_16: /images/pwa/16.png
+  mask_icon: /images/pwa/safari-pinned-tab.svg
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
 Open_Graph_meta: true
@@ -862,16 +863,16 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/muyulong/muyulong@master/css/custom.css" media="defer" onload="this.media='all'">
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/muyulong/cdn@master/css/custom.css" media="defer" onload="this.media='all'">
     # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome-animation/css/font-awesome-animation.min.css" media="defer" onload="this.media='all'">
-    # - <script data-pjax src="https://cdn.jsdelivr.net/gh/muyulong/muyulong@master/js/crash_cheat.js"></script>
+    # - <script data-pjax src="https://cdn.jsdelivr.net/gh/muyulong/cdn@master/js/crash_cheat.js"></script>
     # - <script src="/js/crash_cheat.js"></script>
     # - <link rel="stylesheet" href="/xxx.css">
     # pwa
     # - '<style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style>'
   bottom:
   - <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-  - <script src="https://cdn.jsdelivr.net/gh/muyulong/muyulong@master/js/crash_cheat.js"></script>
+  - <script src="https://cdn.jsdelivr.net/gh/muyulong/cdn@master/js/crash_cheat.js"></script>
     # - <script src="xxxx"></script>
     # pwa
     # - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">点击刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'

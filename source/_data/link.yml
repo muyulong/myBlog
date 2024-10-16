@@ -33,8 +33,8 @@
 
     - link: https://zhaoq.me/
       avatar: https://avatar.dawnlab.me/qq/1838575499
-      name: ZhaoQuinn ‘s Blog
-      descr: ZhaoQuinn ‘s Blog - 热爱科技，热爱生活.
+      name: ZhaoQuinn 's Blog
+      descr: ZhaoQuinn 's Blog - 热爱科技，热爱生活.
 
     - link: https://blog.tigerxly.com
       avatar: https://img.sunxiaochuan258.com/avatar/tigerxly/avatar-tigerxly-512.jpg
@@ -160,17 +160,7 @@
 - class_name: 个人项目
   class_desc: 充分说明这家伙是条咸鱼 |∀` )
   link_list:
-    - link: https://muyulong.herokuapp.com
+    - link: https://github.com/muyulong/pi_gateway
       avatar: https://s2.ax1x.com/2019/08/21/mUFI1O.png
-      name: Youtube直通车
-      descr: 一个极不稳定，访问速度奇慢且停更的Youtube直通车
-
-    - link: http://muyulong.cf/
-      avatar: https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.9/img/custom/oneindex.jpg
-      name: Oneindex
-      descr: 一个基于Onedrive的网盘&图床（已挂）
-
-    - link: http://mmyyll.cf/
-      avatar: https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.9/img/custom/oneindex.jpg
-      name: Oneindex
-      descr: 一个基于Onedrive的网盘&图床（已挂）
+      name: 毕业设计
+      descr: 毕业前唯一一个算是认真做的项目了

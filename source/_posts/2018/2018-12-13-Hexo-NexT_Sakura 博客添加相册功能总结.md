@@ -19,18 +19,19 @@ date: 2018-12-13 18:01:02
 
 当时我使用的是[hexo-NexT](https://github.com/theme-next/hexo-theme-next)主题，所以所有的操作都是在这个主题下完成的。
 但是当我将博客的主题换成[hexo-Sakura](https://github.com/honjun/hexo-theme-sakura)时，我需要再次添加这个功能。
-# hexo-NexT
+
+## hexo-NexT
 
 以下，是在[hexo-NexT](https://github.com/theme-next/hexo-theme-next)主题下的操作过程。
 
 参考的教程链接：
-https://www.sunhome.org.cn/2018/09/29/hexophotos/
-https://asdfv1929.github.io/2018/05/26/next-add-photos/
+<https://www.sunhome.org.cn/2018/09/29/hexophotos/>
+<https://asdfv1929.github.io/2018/05/26/next-add-photos/>
 
 看过上面的教程后，我们总结一下：
-1.在博客根目录的 `/scripts/ `文件夹下新建一个` phototool.js `文件
+1.在博客根目录的 `/scripts/`文件夹下新建一个` phototool.js `文件
 
-```
+```js
 "use strict";
     const fs = require("fs");
     const sizeOf = require('image-size');
@@ -63,8 +64,10 @@ https://asdfv1929.github.io/2018/05/26/next-add-photos/
         }(0));
     });
 ```
-2.在 `/themes/next/source/js/src/` 目录下创建一个` photo.js`，内容如下：
-```
+
+2.在 `/themes/next/source/js/src/` 目录下创建一个`photo.js`，内容如下：
+
+```js
  photo ={
     page: 1,
     //offset 用于设置照片数量的上限
@@ -117,9 +120,11 @@ https://asdfv1929.github.io/2018/05/26/next-add-photos/
 }
 photo.init();
 ```
+
 `minigrid.min.js` 可以 [下载](https://unpkg.com/minigrid@3.1.1/dist/minigrid.min.js) 获得，放在同样的目录下。
-然后如果指向让两个文件在相册页加载，需要修改 `/themes/next/layout/_scripts/commons.swig`为以下内容，这里的判断语句表示如果页面的类型是 `picture `就加载` minigrid.min.js` 和 `photo.js`
-```
+然后如果指向让两个文件在相册页加载，需要修改 `/themes/next/layout/_scripts/commons.swig`为以下内容，这里的判断语句表示如果页面的类型是 `picture`就加载`minigrid.min.js` 和 `photo.js`
+
+```js
 {% if page.type ==='picture' %}
 {%
   set js_commons = [
@@ -144,8 +149,10 @@ photo.init();
   <script type="text/javascript" src="{{ url_for(theme.js) }}/{{ common }}?v={{ version }}"></script>
 {% endfor %}
 ```
+
 3.在`/themes/next/source/css/_custom/custom.styl`添加以下内容
-```
+
+```css
 //相册样式
 .ImageGrid {
   width: 100%;
@@ -166,35 +173,45 @@ photo.init();
   border-radius: 8px;
 }
 ```
-4.开启 `lazyload `和 `fancybox`
-`Hexo-lazy-image `使用
+
+4.开启 `lazyload`和 `fancybox`
+`Hexo-lazy-image`使用
 安装步骤：
 `npm install hexo-lazyload-image --save`
 
 然后修改` _config.yml `文件
-```
+
+```yml
 lazyload:
   enable: true
   onlypost: false
   loadingImg: # eg. ./images/loading.png
 ```
+
 安装`fancybox`
-```
-$ cd themes/next
-$ ls
+
+```bash
+cd themes/next
+ls
 bower.json  _config.yml  docs  gulpfile.coffee  languages  layout  LICENSE.md  package.json  README.md  scripts  source  test
 ```
+
 输入
+
+```bash
+git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
 ```
-$ git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
-```
+
 在主题配置文件`_config.yml`里编辑：
-```
+
+```yml
 fancybox: true
 ```
+
 4.相册文件夹
 ` hexo/source/ `下建立` photos `文件夹,里面新建index.md文件，添加
-```
+
+```md
 ---
 title: photos
 date: xxxx-xx-xx xx:xx:xx//自己编辑
@@ -202,25 +219,29 @@ type: picture
 ---
 <div class="ImageGrid"></div>
 ```
+
 在博客根目录的配置文件里启用`post_asset_folder`
-```
+
+```yml
 post_asset_folder: true
 ```
 
 之后，添加照片，` hexo d -g `就能在自己的博客里看到了。
 总结完毕
 
-# hexo-Sakura
+## hexo-Sakura
+
 与NexT主题不同，Sakura主题使用了[EJS](https://ejs.bootcss.com/)引擎，这使得上面的部分代码需要做一些修改。
 
-与之前的步骤相同，在博客根目录的 `/scripts/ `文件夹下新建一个` phototool.js `文件。
+与之前的步骤相同，在博客根目录的 `/scripts/`文件夹下新建一个` phototool.js `文件。
 
 ` phototool.js `文件中的路径部分需要填写正确，否则会报错/无法访问。
 
-` minigrid.min.js` 和 `photo.js`这两个文件需要放置在` /themes/Sakura/source/js/ `目录中，且`photo.js`中关于文件路径的部分需配置正确。
+`minigrid.min.js` 和 `photo.js`这两个文件需要放置在` /themes/Sakura/source/js/ `目录中，且`photo.js`中关于文件路径的部分需配置正确。
 
 在` /themes/Sakura/source/css `目录中新建` pictures.css `，写入以下内容
-```
+
+```css
 //相册样式
 .ImageGrid {
   width: 100%;
@@ -241,20 +262,24 @@ post_asset_folder: true
   border-radius: 8px;
 }
 ```
-开启 `lazyload `
+
+开启 `lazyload`
 git bash中输入`npm install hexo-lazyload-image --save`
 
 然后修改` _config.yml `文件
-```
+
+```yml
 lazyload:
   enable: true
   onlypost: false
   loadingImg: # eg. ./images/loading.png
 ```
+
 由于Hexo-Sakura自带了fancybox，所以无需再次安装。
 
 在` hexo/source/ `目录下建立` pictures `文件夹,里面新建index.md文件，添加
-```
+
+```md
 ---
 title: Gallery
 date: xxxx-xx-xx xx:xx:xx//自己编辑
@@ -262,22 +287,27 @@ layout: pictures
 comments: false
 ---
 ```
+
 在` /themes/Sakura/source/layout `目录中新建` pictures.ejs `，写入以下内容
-```
+
+```js
 <link rel="stylesheet" href="/css/pictures.css">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <div class="pattern-center-blank"></div>
 <div id="content" class="site-content">
   <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
     <header class="page-header"><h1 class="cat-title">图集 | 相册</h1> <span class="cat-des"><p>这里将是永远的回忆</p> </span></header>
-	<div class="ImageGrid"></div>
-	<script type="text/javascript" src="/js/minigrid.min.js" charset="utf-8"></script>
-	<script type="text/javascript" src="/js/photo.js" charset="utf-8"></script>
+ <div class="ImageGrid"></div>
+ <script type="text/javascript" src="/js/minigrid.min.js" charset="utf-8"></script>
+ <script type="text/javascript" src="/js/photo.js" charset="utf-8"></script>
   </article>
 </div>
 ```
+
 最后，在博客根目录的配置文件里启用`post_asset_folder`
-```
+
+```yml
 post_asset_folder: true
 ```
+
 添加照片，` hexo d -g `就能看到图片了
