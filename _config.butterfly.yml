@@ -380,7 +380,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://comment.muyulong.top
+  envId: https://comment.muyulong.top/.netlify/functions/twikoo
   region:
   visitor: true
   option:
