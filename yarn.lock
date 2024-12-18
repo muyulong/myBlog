@@ -2716,12 +2716,12 @@ hexo-bunyan@^1.0.0:
     mv "~2"
     safe-json-stringify "~1"
 
-hexo-butterfly-artitalk@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npmmirror.com/hexo-butterfly-artitalk/-/hexo-butterfly-artitalk-1.0.4.tgz"
-  integrity sha512-/tdSPT3jF6X+ut+WX5teC1iX6MsnWCWJAo/rQTP11wKy7x56X5u34e3RFxQk14dFp2C8AQlaNj0CJHRQo9WQ/w==
+hexo-butterfly-artitalk@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/hexo-butterfly-artitalk/-/hexo-butterfly-artitalk-1.0.5.tgz#f823c14ac6bb89028be0471eed6cc5a762bdacda"
+  integrity sha512-YQTKdVdxFx+etRREaXsff1ecSrB1w+ZANsujprcGFs8XaC+jo9+G6ozFszVcKxKNBHxrsvij0TqS/KyUjJnu+w==
   dependencies:
-    pug "^3.0.2"
+    pug "^3.0.3"
 
 hexo-cli@^2.0.0:
   version "2.0.0"
@@ -4541,7 +4541,7 @@ pug-walk@^2.0.0:
   resolved "https://registry.npmmirror.com/pug-walk/-/pug-walk-2.0.0.tgz"
   integrity sha512-yYELe9Q5q9IQhuvqsZNwA5hfPkMJ8u92bQLIMcsMxf/VADjNtEYptU+inlufAFYcWdHlwNfZOEnOOQrZrcyJCQ==
 
-pug@^3.0.2:
+pug@^3.0.2, pug@^3.0.3:
   version "3.0.3"
   resolved "https://registry.npmmirror.com/pug/-/pug-3.0.3.tgz"
   integrity sha512-uBi6kmc9f3SZ3PXxqcHiUZLmIXgfgWooKWXcwSGwQd2Zi5Rb0bT14+8CJjJgI8AB+nndLaNgHGrcc6bPIB665g==
