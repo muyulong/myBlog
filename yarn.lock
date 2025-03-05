@@ -2974,10 +2974,10 @@ hexo-tag-fancybox_img@^1.0.1:
   resolved "https://registry.npmmirror.com/hexo-tag-fancybox_img/-/hexo-tag-fancybox_img-1.0.1.tgz"
   integrity sha512-EfKPfemCtl4ogiR6XjDqOw50ZK/ISIOIDG9J9rRLM0RwTlFCY6dX/3QYZpYH5vSbHh/C6KLxbN2sgVaHzi0AGA==
 
-hexo-theme-butterfly@^5.3.3:
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.3.3.tgz#1f0d645f7a432912fabc07d03c17708ef1cce870"
-  integrity sha512-iEPvybG90wgQ1hnjCgDpsOfq7kdzBDok0W2fsREkGUtgapYEqZXcRh/DZHMLZuV3TamFnQ7EaufJ5SUNQHl9ug==
+hexo-theme-butterfly@^5.3.5:
+  version "5.3.5"
+  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.3.5.tgz#b96db135d27240c4407b283db2be9457d8a28b67"
+  integrity sha512-Zh2mc7Tj+QAatUBEkhbfHuyb779ZOd72bx12CDohK0cEQ4rtc4Tc4ukuTiTsNJv5hd7ipMjWXpDJwKIzPTN01Q==
   dependencies:
     hexo-renderer-pug "^3.0.0"
     hexo-renderer-stylus "^3.0.1"
