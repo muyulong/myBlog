@@ -3201,10 +3201,10 @@ idb@^7.0.1:
   resolved "https://registry.npmmirror.com/idb/-/idb-7.1.1.tgz"
   integrity sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==
 
-image-size@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/image-size/-/image-size-2.0.0.tgz#5b03dd619e73a6e7e55c323f9934a0a5d4461e8b"
-  integrity sha512-HP07n1SpdIXGUL4VotUIOQz66MQOq8g7VN+Yj02YTVowqZScQ5i/JYU0+lkNr2pwt5j4hOpk94/UBV1ZCbS2fA==
+image-size@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-2.0.1.tgz#80f06046b8facf8d63d78e1d350873fea375f0eb"
+  integrity sha512-NI6NK/2zchlZopsQrcVIS7jxA0/rtIy74B+/rx5s7rKQyFebmQjZVhzxXgRZJROk+WhhOq+S6sUaODxp0L5hfg==
 
 inflight@^1.0.4:
   version "1.0.6"
