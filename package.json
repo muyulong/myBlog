@@ -42,6 +42,6 @@
     "hexo-tag-bili": "^1.0.0",
     "hexo-tag-fancybox_img": "^1.0.1",
     "hexo-wordcount": "^6.0.1",
-    "image-size": "^2.0.0"
+    "image-size": "^2.0.1"
   }
 }
