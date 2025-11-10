@@ -2012,6 +2012,15 @@ domutils@^3.1.0:
     domelementtype "^2.3.0"
     domhandler "^5.0.3"
 
+domutils@^3.2.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-3.2.2.tgz#edbfe2b668b0c1d97c24baf0f1062b132221bc78"
+  integrity sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==
+  dependencies:
+    dom-serializer "^2.0.0"
+    domelementtype "^2.3.0"
+    domhandler "^5.0.3"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npmmirror.com/ee-first/-/ee-first-1.1.1.tgz"
@@ -2070,6 +2079,11 @@ entities@^4.2.0, entities@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npmmirror.com/entities/-/entities-4.5.0.tgz"
   integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
+
+entities@^6.0.0:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-6.0.1.tgz#c28c34a43379ca7f61d074130b2f5f7020a30694"
+  integrity sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g==
 
 es-abstract@^1.22.1, es-abstract@^1.22.3, es-abstract@^1.23.0, es-abstract@^1.23.2:
   version "1.23.3"
@@ -2974,14 +2988,14 @@ hexo-tag-fancybox_img@^1.0.1:
   resolved "https://registry.npmmirror.com/hexo-tag-fancybox_img/-/hexo-tag-fancybox_img-1.0.1.tgz"
   integrity sha512-EfKPfemCtl4ogiR6XjDqOw50ZK/ISIOIDG9J9rRLM0RwTlFCY6dX/3QYZpYH5vSbHh/C6KLxbN2sgVaHzi0AGA==
 
-hexo-theme-butterfly@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.5.0.tgz#9a770224f312ba3c9c284766858fa5ffb4b15867"
-  integrity sha512-9QKnKcGBfKEJA0mgq0ve7llyglJdao3txv/IdK97oGUjJQTdkZXC5u8BnDHKB6je/rYZcEoxwqm/hl1TbDp4Ng==
+hexo-theme-butterfly@^5.5.2:
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.5.2.tgz#0b75b719af0a7ff0be693175341627ba7643ea03"
+  integrity sha512-4ZHHVqBnBSRAdE9dG6HwWqLo9RWKRPFDhZmTicjs8e8kXd/4XLXT4y6Mbv+9HxonjkC9TM/10Jxx2wtFcgrbKw==
   dependencies:
     hexo-renderer-pug "^3.0.0"
     hexo-renderer-stylus "^3.0.1"
-    hexo-util "^3.3.0"
+    hexo-util "^4.0.0"
     moment-timezone "^0.6.0"
 
 hexo-theme-landscape@^1.1.0:
@@ -3034,6 +3048,19 @@ hexo-util@^3.0.1, hexo-util@^3.1.0, hexo-util@^3.3.0, hexo-util@latest:
     deepmerge "^4.2.2"
     highlight.js "^11.6.0"
     htmlparser2 "^9.0.0"
+    prismjs "^1.29.0"
+    strip-indent "^3.0.0"
+
+hexo-util@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-4.0.0.tgz#23f69597aa200ee5612a4fd986cf7d7b5bcc6ea2"
+  integrity sha512-oXKXBs1HZ2Wu/eq0paAVqtCmAEcqJPZ4xxSVRuwAplm1hFU41Ul53WA5bmYMEz9Dp+OJ/SdchjXRmYlbGJdt3w==
+  dependencies:
+    camel-case "^4.1.2"
+    cross-spawn "^7.0.3"
+    deepmerge "^4.2.2"
+    highlight.js "^11.6.0"
+    htmlparser2 "^10.0.0"
     prismjs "^1.29.0"
     strip-indent "^3.0.0"
 
@@ -3131,6 +3158,16 @@ html-entities@^1.2.0:
   version "1.4.0"
   resolved "https://registry.npmmirror.com/html-entities/-/html-entities-1.4.0.tgz"
   integrity sha512-8nxjcBcd8wovbeKx7h3wTji4e6+rhaVuPNpMqwWgnHh+N9ToqsCs6XztWRBPQ+UtzsoMAdKZtUENoVzU/EMtZA==
+
+htmlparser2@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-10.0.0.tgz#77ad249037b66bf8cc99c6e286ef73b83aeb621d"
+  integrity sha512-TwAZM+zE5Tq3lrEHvOlvwgj1XLWQCtaaibSN11Q+gGBAS7Y1uZSWwXXRe4iF6OXnaq1riyQAPFOBtYc77Mxq0g==
+  dependencies:
+    domelementtype "^2.3.0"
+    domhandler "^5.0.3"
+    domutils "^3.2.1"
+    entities "^6.0.0"
 
 htmlparser2@^3.9.1:
   version "3.10.1"
